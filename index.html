@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		هبيد
+	</title>
+	<style>
+		img {
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		}
+	</style>
+</head>
+
+<body>
+
+	<img src="pic1.jpg" alt="Paris" style="width:50%;">
+
+	<audio id="Audio">
+		<source src="file1.mp3" type="audio/ogg">
+		<source src="file1.ogg" type="audio/mpeg">
+	Your browser does not support the audio element.
+	</audio>
+
+	<!-- <button onclick="play_Audio()" type="button">Play Audio</button> -->
+	<!-- <button onclick="pause_Audio()" type="button">Pause Audio</button> -->
+
+	<script>
+		console.log("Trying To Play GFG");
+		var GFG = document.getElementById("Audio");
+
+		document.onload = function play_Audio() {
+			GFG.play();
+		}
+
+		console.log("GFG Played");
+		var files = [
+		'file1',
+		'file2',
+		'file3',
+		'file4'
+		]
+		
+		let choosenFile = files[Math.floor(Math.random() * files.length)];
+		
+		console.log(choosenFile);
+		
+	</script>
+</body>
+</html>
